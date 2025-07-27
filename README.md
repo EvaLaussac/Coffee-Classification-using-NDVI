@@ -68,14 +68,14 @@ Below are the main Python libraries used in each stage of the project:
 
 ---
 
-## 📂 Datasets
+## Datasets
 
 - **Main Dataset:** `satveg_coffee_merged_ndvi.xlsx`  
 - **Validation Samples Folder:** `validation sample.zip`
 
 ---
 
-## ⚠️ Important Notice
+## ⚠ Important Notice
 
 This project was developed and tested using **Google Colab**, and the dataset paths are configured accordingly.
 
