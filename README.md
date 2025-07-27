@@ -1,38 +1,89 @@
-# Coffee-Classification-using-NDVI
+# Coffee Classification using NDVI
 
-This code is part of "Scalable_Coffee_Crop_Classification_Using_NDVI_Time_Series_from_SATVeg_and_Machine_Learning_Models" paper by Eva Laussac Diniz
+This repository contains the source code used in the paper:
 
+**"Scalable Coffee Crop Classification Using NDVI Time Series from SATVeg and Machine Learning Models"**  
+Author: *Eva Laussac Diniz*
 
+---
 
-**Code Dependancy Declaration (Libraries)**
+## Dependencies
 
-*Data Pre-Prossessing:* Pandas, Datetime, MatPlot, SKLearn
+Below are the main Python libraries used in each stage of the project:
 
-*Random Forest:* Pandas, MatPlot, Seaborn, NumPy, OS, SKLearn
+### Data Pre-processing
+- pandas
+- datetime
+- matplotlib
+- scikit-learn
 
-*TiDE:* Pandas, NumPy, MatPlot, Seaborn, Copy Torch, OS, Random, Datetime, TQDM, SciPy
+### Random Forest
+- pandas
+- matplotlib
+- seaborn
+- numpy
+- os
+- scikit-learn
 
-*XGBoost:* Pandas, MatPlot, Seaborn, NumPy, SKLearn, XGBoost
+### TiDE
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- copy
+- torch
+- os
+- random
+- datetime
+- tqdm
+- scipy
 
-*KNN-DTW:* Pandas, MatPlot, Seaborn, NumPy, OS, SKLearn, Datetime, TSLearn, TQDM
+### XGBoost
+- pandas
+- matplotlib
+- seaborn
+- numpy
+- scikit-learn
+- xgboost
 
-*SVM:* Pandas, MatPlot, Seaborn, NumPy, OS, SKLearn, Datetime
+### KNN-DTW
+- pandas
+- matplotlib
+- seaborn
+- numpy
+- os
+- datetime
+- scikit-learn
+- tslearn
+- tqdm
 
-*Logistic Regression:* Pandas, MatPlot, Seaborn, NumPy, OS, SKLearn
+### SVM and Logistic Regression
+- pandas
+- matplotlib
+- seaborn
+- numpy
+- os
+- datetime
+- scikit-learn
 
+---
 
-**Main Dataset:** satveg_coffee_merged_ndvi.xlsx
+## 📂 Datasets
 
-**Validation Samples:** validation sample.zip
+- **Main Dataset:** `satveg_coffee_merged_ndvi.xlsx`  
+- **Validation Samples Folder:** `validation sample.zip`
 
+---
 
+## ⚠️ Important Notice
 
-# ⚠️ Important Notice
+This project was developed and tested using **Google Colab**, and the dataset paths are configured accordingly.
 
-This project was developed and tested using Google Colab, and the dataset paths in the code are configured accordingly.
-Make sure to update all file paths that reference datasets or input files to match your local file structure.
+Make sure to update all file paths that reference datasets or input files.
 
-**ON DATA PRE-PROCESSING:** *full_dataset = pd.read_excel('/content/satveg_coffee_merged_ndvi.xlsx')*
+```python
+# Example - Data Pre-processing
+full_dataset = pd.read_excel('/content/satveg_coffee_merged_ndvi.xlsx')
 
-**ON MODELS' VALIDATION:** *folder_path = ('/content/dataset ndvi/validation sample')*
-     
+# Example - Validation Path
+folder_path = '/content/dataset ndvi/validation sample'
